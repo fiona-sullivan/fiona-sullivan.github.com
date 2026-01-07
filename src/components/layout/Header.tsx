@@ -21,9 +21,9 @@ const Header = () => {
           {/* Logo */}
           <Link 
             href="/" 
-            className="text-2xl font-bold text-primary-600 dark:text-primary-400 hover:text-primary-700 transition-colors"
+            className="text-xl md:text-2xl font-bold text-primary-700 dark:text-primary-400 hover:text-primary-800 transition-colors"
           >
-            Fiona Sullivan
+            Fiona F. Sullivan Consulting
           </Link>
 
           {/* Desktop Navigation */}

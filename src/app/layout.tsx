@@ -7,12 +7,12 @@ import Footer from '@/components/layout/Footer'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'Fiona Sullivan - Humanitarian Project Management',
+  title: 'Fiona F. Sullivan Consulting',
   description: 'Humanitarian project management professional focused on international development, crisis response, and community-driven solutions.',
   keywords: ['humanitarian', 'project management', 'international development', 'crisis response', 'community engagement'],
-  authors: [{ name: 'Fiona Sullivan' }],
+  authors: [{ name: 'Fiona F. Sullivan' }],
   openGraph: {
-    title: 'Fiona Sullivan - Humanitarian Project Management',
+    title: 'Fiona F. Sullivan Consulting',
     description: 'Humanitarian project management focused on community-driven solutions',
     type: 'website',
   },

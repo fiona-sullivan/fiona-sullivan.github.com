@@ -9,7 +9,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <div className="card group">
+    <Link href={`/projects/${project.id}`} className="card group cursor-pointer block">
       {/* Project Image */}
       <div className="relative h-48 bg-gradient-to-br from-primary-400 to-secondary-400 overflow-hidden">
         {project.imageUrl && (
@@ -20,11 +20,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             className="object-cover group-hover:scale-110 transition-transform duration-300"
           />
         )}
-        {project.featured && (
-          <div className="absolute top-4 right-4 bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-sm font-semibold">
-            Featured
-          </div>
-        )}
       </div>
 
       {/* Project Content */}
@@ -33,7 +28,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           <h3 className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary-600 transition-colors">
             {project.title}
           </h3>
-          <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
+          <span className={`px-3 py-1 rounded-full text-xs font-semibold flex-shrink-0 ${
             project.status === 'completed' 
               ? 'bg-green-100 text-green-800' 
               : project.status === 'in-progress'
@@ -44,26 +39,9 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           </span>
         </div>
 
-        <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
+        <p className="text-gray-600 dark:text-gray-300 mb-6">
           {project.description}
         </p>
-
-        {/* Technologies */}
-        <div className="flex flex-wrap gap-2 mb-4">
-          {project.technologies.slice(0, 4).map((tech) => (
-            <span
-              key={tech}
-              className="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-3 py-1 rounded-md text-sm"
-            >
-              {tech}
-            </span>
-          ))}
-          {project.technologies.length > 4 && (
-            <span className="text-gray-500 text-sm self-center">
-              +{project.technologies.length - 4} more
-            </span>
-          )}
-        </div>
 
         {/* Links */}
         <div className="flex items-center space-x-4">
@@ -72,7 +50,8 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center text-gray-600 dark:text-gray-400 hover:text-primary-600 transition-colors"
+              onClick={(e) => e.stopPropagation()}
+              className="flex items-center text-gray-600 dark:text-gray-400 hover:text-primary-600 transition-colors z-10 relative"
               aria-label="View on GitHub"
             >
               <FaGithub className="text-xl" />
@@ -83,21 +62,19 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center text-gray-600 dark:text-gray-400 hover:text-primary-600 transition-colors"
+              onClick={(e) => e.stopPropagation()}
+              className="flex items-center text-gray-600 dark:text-gray-400 hover:text-primary-600 transition-colors z-10 relative"
               aria-label="View live project"
             >
               <FaExternalLinkAlt className="text-lg" />
             </a>
           )}
-          <Link
-            href={`/projects/${project.id}`}
-            className="ml-auto text-primary-600 hover:text-primary-700 font-medium text-sm transition-colors"
-          >
+          <span className="ml-auto text-primary-600 font-medium text-sm">
             View Details →
-          </Link>
+          </span>
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
 

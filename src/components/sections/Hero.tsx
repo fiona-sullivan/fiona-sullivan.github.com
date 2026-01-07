@@ -7,23 +7,26 @@ const Hero = () => {
       <div className="container-custom">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6">
-            Hi, I'm <span className="text-primary-600 dark:text-primary-400">Fiona Sullivan</span>
+            <span className="text-primary-600 dark:text-primary-400">Fiona F. Sullivan</span>
           </h1>
+          <h2 className="text-3xl md:text-4xl font-semibold text-gray-700 dark:text-gray-300 mb-6">
+            Consulting
+          </h2>
           <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-4">
-            Humanitarian Project Manager
+            Project Management Consultant
           </p>
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto">
-            Building a career at the intersection of global relief work and project management, 
-            delivering community-driven solutions with cultural sensitivity and strong coordination 
-            in humanitarian and international development contexts.
+            I help organizations turn complex initiatives into clear, actionable outcomes. 
+            I'm especially passionate about supporting humanitarian and social impact organizations—bringing 
+            structure, clarity, and accountability to projects that create meaningful change.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link href="/projects" className="btn-primary inline-flex items-center gap-2">
+            <Link href="/contact" className="btn-primary">
+              Get In Touch
+            </Link>
+            <Link href="/projects" className="btn-secondary inline-flex items-center gap-2">
               View My Projects
               <FaArrowRight />
-            </Link>
-            <Link href="/contact" className="btn-secondary">
-              Get In Touch
             </Link>
           </div>
 

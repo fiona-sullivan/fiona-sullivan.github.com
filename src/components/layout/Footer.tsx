@@ -1,13 +1,11 @@
 import Link from 'next/link'
-import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter } from 'react-icons/fa'
+import { FaLinkedin, FaEnvelope } from 'react-icons/fa'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   const socialLinks = [
-    { icon: FaGithub, href: 'https://github.com', label: 'GitHub' },
-    { icon: FaLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: FaTwitter, href: 'https://twitter.com', label: 'Twitter' },
+    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/fiona-sullivan-143619214', label: 'LinkedIn' },
     { icon: FaEnvelope, href: '/contact', label: 'Contact' },
   ]
 
@@ -17,9 +15,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* About Section */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Fiona Sullivan</h3>
+            <h3 className="text-xl font-bold mb-4">Fiona F. Sullivan Consulting</h3>
             <p className="text-gray-400">
-              Humanitarian project manager building community-driven solutions at the 
+              Humanitarian project management consulting building community-driven solutions at the 
               intersection of global relief work and international development.
             </p>
           </div>
@@ -73,7 +71,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-          <p>&copy; {currentYear} Fiona Sullivan. All rights reserved.</p>
+          <p>&copy; {currentYear} Fiona F. Sullivan Consulting. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -5,7 +5,7 @@ import type { Metadata } from 'next'
 import { FaBriefcase, FaGraduationCap } from 'react-icons/fa'
 
 export const metadata: Metadata = {
-  title: 'About | Fiona Sullivan',
+  title: 'About | Fiona F. Sullivan Consulting',
   description: 'Learn about my background in humanitarian work, international development, and community-driven project management.',
 }
 
@@ -26,35 +26,22 @@ export default function AboutPage() {
                   About Me
                 </h1>
                 <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
-                  I'm passionate about building a humanitarian career that sits at the 
-                  intersection of global relief work and project management. My background in 
-                  International Security & Conflict Resolution, combined with hands-on roles in 
-                  project coordination and crisis response, has shaped my human-centered approach 
-                  to problem solving.
+                  I'm a project management consultant specializing in complex initiatives for 
+                  mission-driven organizations. I'm deeply motivated by humanitarian and social impact work, 
+                  helping organizations strengthen delivery, improve collaboration, and turn vision into 
+                  measurable results.
                 </p>
                 <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
-                  I've studied abroad in Ghana and Italy, volunteered with CORE in Jamaica to 
-                  support community-driven humanitarian efforts, and worked in project-focused 
-                  roles at UC San Diego during the pandemic. I'm currently expanding my operational 
-                  and leadership skills through Georgetown University's Project Management program.
+                  My approach blends structure with empathy—ensuring projects stay on track while honoring 
+                  the people and purpose behind them. I thrive at the intersection of planning and people—bringing 
+                  clarity, accountability, and momentum to every project I support.
                 </p>
                 <p className="text-lg text-gray-700 dark:text-gray-300">
-                  My goal is to contribute to humanitarian and international development projects 
-                  that require strong coordination, cultural sensitivity, and solutions built 
-                  with — not just for — communities.
+                  I partner with teams to streamline processes, manage risk, and deliver initiatives that 
+                  align strategy with mission.
                 </p>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* Skills */}
-        <section className="mb-20">
-          <h2 className="section-title text-center mb-12">Skills & Expertise</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-            {skills.map((skill) => (
-              <SkillCard key={skill.name} skill={skill} />
-            ))}
           </div>
         </section>
 
@@ -110,7 +97,7 @@ export default function AboutPage() {
         </section>
 
         {/* Education */}
-        <section className="max-w-4xl mx-auto">
+        <section className="max-w-4xl mx-auto mb-20">
           <h2 className="section-title text-center mb-12">Education & Certifications</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="card p-6">
@@ -188,6 +175,16 @@ export default function AboutPage() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Skills */}
+        <section className="max-w-4xl mx-auto">
+          <h2 className="section-title text-center mb-12">Skills & Expertise</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            {skills.map((skill) => (
+              <SkillCard key={skill.name} skill={skill} />
+            ))}
           </div>
         </section>
       </div>

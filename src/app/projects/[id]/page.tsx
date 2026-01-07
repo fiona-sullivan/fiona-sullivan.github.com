@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
   }
 
   return {
-    title: `${project.title} | Fiona Sullivan`,
+    title: `${project.title} | Fiona F. Sullivan Consulting`,
     description: project.description,
   }
 }
@@ -138,7 +138,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
           {/* Technologies */}
           <div className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-              Technologies & Tools
+              Key Competencies
             </h2>
             <div className="flex flex-wrap gap-3">
               {project.technologies.map((tech) => (

@@ -3,7 +3,7 @@ import ProjectCard from '@/components/ui/ProjectCard'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Projects | Fiona Sullivan',
+  title: 'Projects | Fiona F. Sullivan Consulting',
   description: 'Explore humanitarian and international development projects focused on community-driven solutions and crisis response.',
 }
 

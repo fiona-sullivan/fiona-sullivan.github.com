@@ -1,9 +1,8 @@
-import ContactForm from '@/components/ui/ContactForm'
-import { FaEnvelope, FaLinkedin, FaGithub, FaMapMarkerAlt } from 'react-icons/fa'
+import { FaEnvelope, FaLinkedin, FaMapMarkerAlt } from 'react-icons/fa'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact | Fiona Sullivan',
+  title: 'Contact | Fiona F. Sullivan Consulting',
   description: 'Get in touch to discuss humanitarian projects, international development opportunities, or collaboration.',
 }
 
@@ -18,66 +17,63 @@ export default function ContactPage() {
           </p>
         </div>
 
-        {/* Contact Form */}
-        <div className="card p-8 mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
-            Send Me a Message
-          </h2>
-          <ContactForm />
-        </div>
+        {/* Contact Information Card */}
+        <div className="card p-12 text-center">
 
-        {/* Contact Information - Simplified */}
-        <div className="text-center space-y-6">
-          <div>
-            <div className="flex justify-center items-center gap-3 mb-2">
-              <FaEnvelope className="text-2xl text-primary-600 dark:text-primary-400" />
-              <a
-                href="mailto:fiona.sullivan@example.com"
-                className="text-lg text-primary-600 hover:text-primary-700 transition-colors"
-              >
-                fiona.sullivan@example.com
-              </a>
+          {/* Contact Methods - Side by Side */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            {/* Email */}
+            <div className="flex flex-col items-center gap-4">
+              <div className="bg-primary-100 dark:bg-primary-900 p-4 rounded-full">
+                <FaEnvelope className="text-3xl text-primary-600 dark:text-primary-400" />
+              </div>
+              <div>
+                <h3 className="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-2">Email</h3>
+                <a
+                  href="mailto:fiona.sullivan716@gmail.com"
+                  className="text-lg text-primary-600 hover:text-primary-700 transition-colors font-medium"
+                >
+                  fiona.sullivan716@gmail.com
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div>
-            <div className="flex justify-center items-center gap-3 mb-2">
-              <FaMapMarkerAlt className="text-2xl text-primary-600 dark:text-primary-400" />
-              <p className="text-lg text-gray-600 dark:text-gray-400">
-                Washington, District of Columbia
-              </p>
+            {/* Location */}
+            <div className="flex flex-col items-center gap-4">
+              <div className="bg-primary-100 dark:bg-primary-900 p-4 rounded-full">
+                <FaMapMarkerAlt className="text-3xl text-primary-600 dark:text-primary-400" />
+              </div>
+              <div>
+                <h3 className="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-2">Location</h3>
+                <p className="text-lg text-gray-700 dark:text-gray-300">
+                  Washington, DC
+                </p>
+              </div>
             </div>
-          </div>
 
-          {/* Social Links */}
-          <div className="pt-6">
-            <p className="text-gray-600 dark:text-gray-400 mb-4">Connect with me:</p>
-            <div className="flex justify-center gap-6">
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-4xl text-blue-600 hover:text-blue-700 transition-colors"
-                aria-label="LinkedIn"
-              >
-                <FaLinkedin />
-              </a>
-              <a
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-4xl text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
-                aria-label="GitHub"
-              >
-                <FaGithub />
-              </a>
+            {/* LinkedIn */}
+            <div className="flex flex-col items-center gap-4">
+              <div className="bg-blue-100 dark:bg-blue-900 p-4 rounded-full">
+                <FaLinkedin className="text-3xl text-blue-600 dark:text-blue-400" />
+              </div>
+              <div>
+                <h3 className="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-2">LinkedIn</h3>
+                <a
+                  href="https://www.linkedin.com/in/fiona-sullivan-143619214"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg text-blue-600 hover:text-blue-700 transition-colors font-medium"
+                >
+                  Connect on LinkedIn
+                </a>
+              </div>
             </div>
           </div>
 
           {/* Availability Note */}
-          <div className="pt-6">
+          <div className="pt-8 mt-8 border-t border-gray-200 dark:border-gray-700">
             <p className="text-gray-600 dark:text-gray-400 italic">
-              Available for consulting opportunities in humanitarian project management. 
+              Available for consulting in humanitarian project management. 
               I typically respond within 24-48 hours.
             </p>
           </div>
