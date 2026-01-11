@@ -3,12 +3,25 @@ import { Project, Skill, Experience } from '@/types'
 // Sample project data
 export const projects: Project[] = [
   {
+    id: '4',
+    title: 'Project Management Consulting',
+    description: 'Providing independent project management consulting services for humanitarian and development organizations.',
+    longDescription: 'Provide independent project management consulting services for humanitarian and development organizations, supporting programmatic delivery as well as facilities and operations functions. Coordinate day-to-day project administration across multiple engagements; support PMO governance; contribute to client deliverables; and assist with design–build construction projects through cross-functional coordination and schedule tracking.',
+    technologies: ['Project Planning', 'PMO Governance', 'Schedule Tracking', 'Cross-Functional Coordination'],
+    category: 'consulting',
+    featured: true,
+    startDate: '2025-04',
+    status: 'in-progress',
+    role: 'Independent Contractor',
+    teamSize: 3,
+  },
+  {
     id: '1',
     title: 'Disaster Relief Response - Jamaica',
     description: 'Volunteered with Community Organized Relief Effort (CORE) in Jamaica, supporting community-driven humanitarian initiatives and culturally sensitive relief strategies.',
     longDescription: 'Volunteered with Community Organized Relief Effort (CORE) in Jamaica, supporting community-driven humanitarian initiatives by coordinating local health resources, conducting site surveys, supporting GIS tracking, facilitating community meetings, and contributing to UN-aligned reporting and culturally sensitive relief strategies.',
     technologies: ['Community Engagement', 'Crisis Response', 'GIS Tracking', 'UN Reporting', 'Site Surveys'],
-    imageUrl: '/projects/jamaica.jpg',
+    imageUrl: '/projects/jamaica/IMG_9484.jpeg',
     category: 'consulting',
     featured: true,
     startDate: '2025-11',
@@ -28,7 +41,6 @@ export const projects: Project[] = [
     description: 'Supported emergency operations at UC San Diego during the COVID-19 pandemic by coordinating housing logistics and quarantine operations.',
     longDescription: 'Supported emergency operations at UC San Diego during the COVID-19 pandemic by coordinating housing logistics, media communications, and quarantine operations for students. Developed emergency response protocols, facilitated cross-departmental coordination, and provided crisis support.',
     technologies: ['Crisis Management', 'Operations Coordination', 'Emergency Protocols', 'Cross-Departmental Communication'],
-    imageUrl: '/projects/ucsd.jpg',
     category: 'other',
     featured: true,
     startDate: '2021-10',
@@ -42,20 +54,6 @@ export const projects: Project[] = [
       'Provided crisis support for students',
     ],
   },
-  {
-    id: '4',
-    title: 'Project Management Consulting',
-    description: 'Providing independent project management consulting services for humanitarian and development organizations.',
-    longDescription: 'Provide independent project management consulting services for humanitarian and development organizations, supporting programmatic delivery as well as facilities and operations functions. Coordinate day-to-day project administration across multiple engagements; support PMO governance; contribute to client deliverables; and assist with design–build construction projects through cross-functional coordination and schedule tracking.',
-    technologies: ['Project Planning', 'PMO Governance', 'Schedule Tracking', 'Cross-Functional Coordination'],
-    imageUrl: '/projects/consulting.jpg',
-    category: 'consulting',
-    featured: true,
-    startDate: '2025-04',
-    status: 'in-progress',
-    role: 'Independent Contractor',
-    teamSize: 3,
-  },
 ]
 
 // Sample skills data
@@ -64,7 +62,6 @@ export const skills: Skill[] = [
   { name: 'Stakeholder Management', category: 'communication', level: 'expert' },
   { name: 'Cross-Cultural Communication', category: 'communication', level: 'expert' },
   { name: 'Conflict Resolution', category: 'leadership', level: 'advanced' },
-  { name: 'Strategic Planning', category: 'leadership', level: 'advanced' },
 ]
 
 // Sample experience data

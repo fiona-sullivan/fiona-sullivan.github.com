@@ -36,12 +36,9 @@ const SkillCard = ({ skill }: SkillCardProps) => {
           <Icon className="text-3xl text-primary-600 dark:text-primary-400" />
         </div>
       </div>
-      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+      <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
         {skill.name}
       </h3>
-      <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${levelColors[skill.level]}`}>
-        {skill.level}
-      </span>
     </div>
   )
 }

@@ -11,16 +11,16 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
     <Link href={`/projects/${project.id}`} className="card group cursor-pointer block">
       {/* Project Image */}
-      <div className="relative h-48 bg-gradient-to-br from-primary-400 to-secondary-400 overflow-hidden">
-        {project.imageUrl && (
+      {project.imageUrl && (
+        <div className="relative h-48 bg-gradient-to-br from-primary-400 to-secondary-400 overflow-hidden">
           <Image
             src={project.imageUrl}
             alt={project.title}
             fill
             className="object-cover group-hover:scale-110 transition-transform duration-300"
           />
-        )}
-      </div>
+        </div>
+      )}
 
       {/* Project Content */}
       <div className="p-6">

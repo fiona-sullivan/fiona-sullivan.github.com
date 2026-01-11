@@ -17,7 +17,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Fiona F. Sullivan Consulting</h3>
             <p className="text-gray-400">
-              Humanitarian project management consulting building community-driven solutions at the 
+              Building community-driven solutions at the 
               intersection of global relief work and international development.
             </p>
           </div>

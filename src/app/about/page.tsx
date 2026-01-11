@@ -20,7 +20,14 @@ export default function AboutPage() {
         <section className="max-w-4xl mx-auto mb-20">
           <div className="card p-8">
             <div className="flex flex-col md:flex-row gap-8 items-center">
-              <div className="w-48 h-48 bg-gradient-to-br from-primary-400 to-secondary-400 rounded-full flex-shrink-0" />
+              <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-primary-600 dark:border-primary-400 shadow-lg flex-shrink-0">
+                <Image
+                  src="/headshot.png"
+                  alt="Fiona F. Sullivan"
+                  fill
+                  className="object-cover"
+                />
+              </div>
               <div>
                 <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
                   About Me
