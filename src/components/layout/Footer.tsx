@@ -15,10 +15,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* About Section */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Fiona F. Sullivan Consulting</h3>
+            <h3 className="text-xl font-bold mb-4">FFS Consulting</h3>
             <p className="text-gray-400">
-              Building community-driven solutions at the 
-              intersection of global relief work and international development.
+              Project Management consulting supporting organizations to build scalable, community-driven solutions. 
             </p>
           </div>
 

@@ -33,19 +33,22 @@ export default function AboutPage() {
                   About Me
                 </h1>
                 <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
-                  I'm a project management consultant specializing in complex initiatives for 
-                  mission-driven organizations. I'm deeply motivated by humanitarian and social impact work, 
-                  helping organizations strengthen delivery, improve collaboration, and turn vision into 
-                  measurable results.
+                  I’m a project management consultant specializing in operations, development planning, 
+                  sustainability, and community-driven solutions. I hold a Bachelor's degree in International 
+                  Security and Conflict Resolution with an emphasis on justice in the global system along with a 
+                  Masters Certificate in Project Management. My approach to project management blends structure 
+                  with empathy and is informed by my deep motivation to support social impact organizations. 
                 </p>
                 <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
-                  My approach blends structure with empathy—ensuring projects stay on track while honoring 
-                  the people and purpose behind them. I thrive at the intersection of planning and people—bringing 
-                  clarity, accountability, and momentum to every project I support.
+                  Having lived and studied internationally long term in both Accra, Ghana and Rome, Italy, I bring 
+                  a deep appreciation for cultural nuance, collaboration across contexts, and locally informed solutions. 
+                  I take a grounded, respectful approach to relationship-building and thrive in environments that require 
+                  coordination across diverse teams and priorities.
                 </p>
                 <p className="text-lg text-gray-700 dark:text-gray-300">
-                  I partner with teams to streamline processes, manage risk, and deliver initiatives that 
-                  align strategy with mission.
+                  I am eager to bring my experience in people operations, cross-cultural communication, 
+                  workflow coordination, and organizational support to a team dedicated to equity, belonging, 
+                  and transformative change.
                 </p>
               </div>
             </div>

@@ -9,8 +9,9 @@ const CallToAction = () => {
           Let's Create Impact Together
         </h2>
         <p className="text-xl mb-10 max-w-2xl mx-auto opacity-90">
-          Interested in collaborating on humanitarian or international development projects? 
-          I'd love to discuss how we can build community-driven solutions together.
+          Interested in collaborating on community driven projects? 
+          I’d love to discuss how we can build community-driven solutions together. 
+
         </p>
         <Link 
           href="/contact" 

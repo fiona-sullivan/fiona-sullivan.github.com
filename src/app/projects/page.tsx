@@ -16,7 +16,7 @@ export default function ProjectsPage() {
         <div className="text-center mb-12">
           <h1 className="section-title">All Projects</h1>
           <p className="section-subtitle">
-            Humanitarian and international development projects driven by community engagement
+            Humanitarian and development projects driven by community engagement
           </p>
         </div>
 

@@ -30,26 +30,6 @@ const Hero = () => {
             structure, clarity, and accountability to projects that create meaningful change.
           </p>
 
-          {/* Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">3</div>
-              <div className="text-gray-600 dark:text-gray-400">Countries Worked</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">5+</div>
-              <div className="text-gray-600 dark:text-gray-400">Years Experience</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">10+</div>
-              <div className="text-gray-600 dark:text-gray-400">Projects Coordinated</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-2">100%</div>
-              <div className="text-gray-600 dark:text-gray-400">Community Focused</div>
-            </div>
-          </div>
-
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-10">
             <Link href="/contact" className="btn-primary">
               Get In Touch

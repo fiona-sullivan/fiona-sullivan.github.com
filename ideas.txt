@@ -1,0 +1,4 @@
+change the name in the top bar to be the logo instead
+
+in the tab header thing at the very top change to ffs consulting
+
