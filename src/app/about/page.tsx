@@ -14,7 +14,7 @@ export default function AboutPage() {
   const experiences = getExperience()
 
   return (
-    <div className="py-20 bg-gray-50 dark:bg-gray-900 min-h-screen">
+    <div className="py-20 min-h-screen" style={{backgroundImage: 'url(/background.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed'}}>
       <div className="container-custom">
         {/* Introduction */}
         <section className="max-w-4xl mx-auto mb-20">
@@ -57,7 +57,7 @@ export default function AboutPage() {
 
         {/* Experience */}
         <section className="mb-20">
-          <h2 className="section-title text-center mb-12">Work Experience</h2>
+          <h2 className="section-title text-center mb-12" style={{color: '#3c1617', textShadow: '0 2px 4px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(255, 255, 255, 0.3)'}}>Work Experience</h2>
           <div className="max-w-4xl mx-auto">
             {experiences.map((exp, index) => (
               <div
@@ -108,7 +108,7 @@ export default function AboutPage() {
 
         {/* Education */}
         <section className="max-w-4xl mx-auto mb-20">
-          <h2 className="section-title text-center mb-12">Education & Certifications</h2>
+          <h2 className="section-title text-center mb-12" style={{color: '#3c1617', textShadow: '0 2px 4px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(255, 255, 255, 0.3)'}}>Education & Certifications</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="card p-6">
               <div className="flex items-start gap-4">
@@ -123,7 +123,7 @@ export default function AboutPage() {
                     Georgetown University
                   </p>
                   <p className="text-gray-600 dark:text-gray-400 text-sm">
-                    In Progress
+                    Graduated Dec 2025
                   </p>
                 </div>
               </div>
@@ -139,7 +139,7 @@ export default function AboutPage() {
                     BA, International Security & Conflict Resolution
                   </h3>
                   <p className="text-primary-600 dark:text-primary-400 mb-2">
-                    UC San Diego
+                    SDSU
                   </p>
                   <p className="text-gray-600 dark:text-gray-400 text-sm">
                     Graduated 2024
@@ -190,8 +190,8 @@ export default function AboutPage() {
 
         {/* Skills */}
         <section className="max-w-4xl mx-auto">
-          <h2 className="section-title text-center mb-12">Skills & Expertise</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <h2 className="section-title text-center mb-12" style={{color: '#3c1617', textShadow: '0 2px 4px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(255, 255, 255, 0.3)'}}>Skills & Expertise</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {skills.map((skill) => (
               <SkillCard key={skill.name} skill={skill} />
             ))}

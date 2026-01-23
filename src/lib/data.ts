@@ -8,6 +8,7 @@ export const projects: Project[] = [
     description: 'Providing independent project management consulting services for humanitarian and development organizations.',
     longDescription: 'Provide independent project management consulting services for humanitarian and development organizations, supporting programmatic delivery as well as facilities and operations functions. Coordinate day-to-day project administration across multiple engagements; support PMO governance; contribute to client deliverables; and assist with design–build construction projects through cross-functional coordination and schedule tracking.',
     technologies: ['Project Planning', 'PMO Governance', 'Schedule Tracking', 'Cross-Functional Coordination'],
+    imageUrl: '/projects/project_management_consulting.png',
     category: 'consulting',
     featured: true,
     startDate: '2025-04',
@@ -38,9 +39,10 @@ export const projects: Project[] = [
   {
     id: '2',
     title: 'COVID-19 Housing & Quarantine Coordination',
-    description: 'Supported emergency operations at UC San Diego during the COVID-19 pandemic by coordinating housing logistics and quarantine operations.',
-    longDescription: 'Supported emergency operations at UC San Diego during the COVID-19 pandemic by coordinating housing logistics, media communications, and quarantine operations for students. Developed emergency response protocols, facilitated cross-departmental coordination, and provided crisis support.',
+    description: 'Supported emergency operations at SDSU during the COVID-19 pandemic by coordinating housing logistics and quarantine operations.',
+    longDescription: 'Supported emergency operations at SDSU during the COVID-19 pandemic by coordinating housing logistics, media communications, and quarantine operations for students. Developed emergency response protocols, facilitated cross-departmental coordination, and provided crisis support.',
     technologies: ['Crisis Management', 'Operations Coordination', 'Emergency Protocols', 'Cross-Departmental Communication'],
+    imageUrl: '/projects/covid.png',
     category: 'other',
     featured: true,
     startDate: '2021-10',
@@ -59,9 +61,11 @@ export const projects: Project[] = [
 // Sample skills data
 export const skills: Skill[] = [
   { name: 'Project Planning', category: 'project-management', level: 'expert' },
+  { name: 'Agile Project Management', category: 'project-management', level: 'expert' },
   { name: 'Stakeholder Management', category: 'communication', level: 'expert' },
   { name: 'Cross-Cultural Communication', category: 'communication', level: 'expert' },
   { name: 'Conflict Resolution', category: 'leadership', level: 'advanced' },
+  { name: 'Organizational Development', category: 'leadership', level: 'advanced' },
 ]
 
 // Sample experience data
@@ -114,7 +118,7 @@ export const experience: Experience[] = [
   },
   {
     id: '4',
-    company: 'UC San Diego',
+    company: 'SDSU',
     position: 'Housing and Media Coordinator / Quarantine and Housing Coordinator',
     startDate: 'Oct 2021',
     endDate: 'May 2022',

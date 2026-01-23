@@ -4,7 +4,7 @@ import { FaArrowRight } from 'react-icons/fa'
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-br from-primary-50 to-secondary-50 dark:from-gray-900 dark:to-gray-800 py-20 md:py-32">
+    <section className="py-20 md:py-32" style={{backgroundImage: 'url(/background.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed'}}>
       <div className="container-custom">
         <div className="max-w-4xl mx-auto text-center animate-fade-in">
           <div className="mb-8 flex justify-center">
@@ -18,13 +18,13 @@ const Hero = () => {
               />
             </div>
           </div>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6">
-            <span className="text-primary-600 dark:text-primary-400">Fiona F. Sullivan</span>
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6" style={{color: '#3c1617', textShadow: '0 2px 4px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(255, 255, 255, 0.3)'}}>
+            <span style={{color: '#3c1617', textShadow: '0 2px 4px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(255, 255, 255, 0.3)'}}>Fiona F. Sullivan</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-4">
+          <p className="text-xl md:text-2xl mb-4" style={{color: '#3c1617', textShadow: '0 1px 3px rgba(255, 255, 255, 0.4)'}}>
             Project Management Consultant
           </p>
-          <p className="text-lg text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto">
+          <p className="text-lg mb-10 max-w-2xl mx-auto px-4 py-2 rounded-lg" style={{color: '#5e2f29', backgroundColor: 'rgba(255, 255, 255, 0.3)', backdropFilter: 'blur(4px)'}}>
             I help organizations turn complex initiatives into clear, actionable outcomes. 
             I'm especially passionate about supporting humanitarian and social impact organizations—bringing 
             structure, clarity, and accountability to projects that create meaningful change.
