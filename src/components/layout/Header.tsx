@@ -15,13 +15,14 @@ const Header = () => {
   ]
 
   return (
-    <header className="sticky top-0 z-50 bg-white dark:bg-gray-900 shadow-md">
+    <header className="sticky top-0 z-50 shadow-md" style={{backgroundColor: '#f5f1ea'}}>
       <nav className="container-custom py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link 
             href="/" 
-            className="text-xl md:text-2xl font-bold text-primary-700 dark:text-primary-400 hover:text-primary-800 transition-colors"
+            className="text-xl md:text-2xl font-bold hover:text-primary-800 transition-colors"
+            style={{color: '#5e2f29'}}
           >
             Fiona F. Sullivan Consulting
           </Link>
@@ -32,7 +33,8 @@ const Header = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors"
+                className="font-medium transition-colors"
+                style={{color: '#3c1617'}}
               >
                 {link.label}
               </Link>
@@ -41,7 +43,8 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-gray-700 dark:text-gray-300 text-2xl"
+            className="md:hidden text-2xl"
+            style={{color: '#3c1617'}}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -56,7 +59,8 @@ const Header = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                className="block text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors"
+                className="block font-medium transition-colors"
+                style={{color: '#3c1617'}}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.label}

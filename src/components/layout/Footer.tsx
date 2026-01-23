@@ -10,38 +10,38 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="py-12" style={{backgroundColor: '#f5f1ea'}}>
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* About Section */}
           <div>
-            <h3 className="text-xl font-bold mb-4">FFS Consulting</h3>
-            <p className="text-gray-400">
+            <h3 className="text-xl font-bold mb-4" style={{color: '#3c1617'}}>FFS Consulting</h3>
+            <p style={{color: '#5e2f29'}}>
               Project Management consulting supporting organizations to build scalable, community-driven solutions. 
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Quick Links</h3>
+            <h3 className="text-xl font-bold mb-4" style={{color: '#3c1617'}}>Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/" className="transition-colors hover:opacity-70" style={{color: '#5e2f29'}}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/projects" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/projects" className="transition-colors hover:opacity-70" style={{color: '#5e2f29'}}>
                   Projects
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/about" className="transition-colors hover:opacity-70" style={{color: '#5e2f29'}}>
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="/contact" className="transition-colors hover:opacity-70" style={{color: '#5e2f29'}}>
                   Contact
                 </Link>
               </li>
@@ -50,7 +50,7 @@ const Footer = () => {
 
           {/* Social Links */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Connect</h3>
+            <h3 className="text-xl font-bold mb-4" style={{color: '#3c1617'}}>Connect</h3>
             <div className="flex space-x-4">
               {socialLinks.map((social) => (
                 <a
@@ -58,7 +58,8 @@ const Footer = () => {
                   href={social.href}
                   target={social.href.startsWith('http') ? '_blank' : undefined}
                   rel={social.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                  className="text-gray-400 hover:text-white text-2xl transition-colors"
+                  className="text-2xl transition-colors hover:opacity-70"
+                  style={{color: '#5e2f29'}}
                   aria-label={social.label}
                 >
                   <social.icon />
@@ -69,8 +70,19 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
+        <div className="pt-8 text-center" style={{borderTop: '1px solid #d4c4b0', color: '#5e2f29'}}>
           <p>&copy; {currentYear} Fiona F. Sullivan Consulting. All rights reserved.</p>
+          <p className="text-sm mt-2">
+            Website built by{' '}
+            <a 
+              href="https://tyler-schwenk.github.io/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:opacity-70 transition-opacity underline"
+            >
+              Tyler Schwenk
+            </a>
+          </p>
         </div>
       </div>
     </footer>

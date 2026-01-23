@@ -6,11 +6,11 @@ const FeaturedProjects = () => {
   const featuredProjects = getFeaturedProjects()
 
   return (
-    <section className="py-20 bg-white dark:bg-gray-900">
+    <section className="py-20" style={{backgroundColor: '#faf8f5'}}>
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h2 className="section-title">Featured Projects</h2>
-          <p className="section-subtitle">
+          <h2 className="section-title" style={{color: '#3c1617', textShadow: '0 2px 4px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(255, 255, 255, 0.3)'}}>Featured Projects</h2>
+          <p className="section-subtitle" style={{color: '#5e2f29', backgroundColor: 'rgba(255, 255, 255, 0.3)', backdropFilter: 'blur(4px)'}}>
             Community-driven humanitarian and development initiatives
           </p>
         </div>

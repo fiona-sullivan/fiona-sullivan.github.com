@@ -11,13 +11,15 @@ export default function ProjectsPage() {
   const projects = getAllProjects()
 
   return (
-    <div className="py-20 bg-gray-50 dark:bg-gray-900 min-h-screen">
+    <div className="py-20 min-h-screen" style={{backgroundImage: 'url(/background.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed'}}>
       <div className="container-custom">
         <div className="text-center mb-12">
-          <h1 className="section-title">All Projects</h1>
-          <p className="section-subtitle">
-            Humanitarian and development projects driven by community engagement
-          </p>
+          <h1 className="section-title" style={{color: '#3c1617', textShadow: '0 2px 4px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(255, 255, 255, 0.3)'}}>All Projects</h1>
+          <div className="flex justify-center">
+            <p className="section-subtitle inline-block px-4 py-2 rounded-lg" style={{color: '#5e2f29', backgroundColor: 'rgba(255, 255, 255, 0.3)', backdropFilter: 'blur(4px)'}}>
+              Humanitarian and development projects driven by community engagement
+            </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

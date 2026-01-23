@@ -8,13 +8,15 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="py-20 bg-gray-50 dark:bg-gray-900 min-h-screen">
+    <div className="py-20 min-h-screen" style={{backgroundImage: 'url(/background.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed'}}>
       <div className="container-custom max-w-3xl">
         <div className="text-center mb-12">
-          <h1 className="section-title">Get In Touch</h1>
-          <p className="section-subtitle">
-            Interested in collaboration on humanitarian or international development projects? Let's connect.
-          </p>
+          <h1 className="section-title" style={{color: '#3c1617', textShadow: '0 2px 4px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(255, 255, 255, 0.3)'}}>Get In Touch</h1>
+          <div className="flex justify-center">
+            <p className="section-subtitle inline-block px-4 py-2 rounded-lg" style={{color: '#5e2f29', backgroundColor: 'rgba(255, 255, 255, 0.3)', backdropFilter: 'blur(4px)'}}>
+              Interested in collaboration on humanitarian or international development projects? Let's connect.
+            </p>
+          </div>
         </div>
 
         {/* Contact Information Card */}

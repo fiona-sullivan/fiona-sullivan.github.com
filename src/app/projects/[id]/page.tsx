@@ -41,11 +41,12 @@ export default function ProjectPage({ params }: ProjectPageProps) {
   }
 
   return (
-    <div className="py-20 bg-gray-50 dark:bg-gray-900 min-h-screen">
+    <div className="py-20 min-h-screen" style={{backgroundImage: 'url(/background.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundAttachment: 'fixed'}}>
       <div className="container-custom max-w-5xl">
         <Link
           href="/projects"
-          className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 mb-8 transition-colors"
+          className="inline-flex items-center gap-2 hover:opacity-70 mb-8 transition-colors font-semibold"
+          style={{color: '#5e2f29'}}
         >
           <FaArrowLeft />
           Back to Projects

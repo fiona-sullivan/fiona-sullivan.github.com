@@ -9,9 +9,6 @@ const Experience = () => {
       <div className="container-custom">
         <div className="text-center mb-12">
           <h2 className="section-title" style={{color: '#3c1617', textShadow: '0 2px 4px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(255, 255, 255, 0.3)'}}>Professional Experience</h2>
-          <p className="section-subtitle" style={{color: '#5e2f29', backgroundColor: 'rgba(255, 255, 255, 0.3)', backdropFilter: 'blur(4px)'}}>
-            My journey in project management and leadership
-          </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
